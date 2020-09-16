@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', "HomeController@index");
+Route::post('/get-product-by-topping', "HomeController@getByTopping");
